@@ -1,0 +1,13 @@
+D:\Coding dojo\codingdojo_csharp\fundamental\bin\Debug\netcoreapp3.1\fundamental.exe
+D:\Coding dojo\codingdojo_csharp\fundamental\bin\Debug\netcoreapp3.1\fundamental.deps.json
+D:\Coding dojo\codingdojo_csharp\fundamental\bin\Debug\netcoreapp3.1\fundamental.runtimeconfig.json
+D:\Coding dojo\codingdojo_csharp\fundamental\bin\Debug\netcoreapp3.1\fundamental.runtimeconfig.dev.json
+D:\Coding dojo\codingdojo_csharp\fundamental\bin\Debug\netcoreapp3.1\fundamental.dll
+D:\Coding dojo\codingdojo_csharp\fundamental\bin\Debug\netcoreapp3.1\fundamental.pdb
+D:\Coding dojo\codingdojo_csharp\fundamental\obj\Debug\netcoreapp3.1\fundamental.csprojAssemblyReference.cache
+D:\Coding dojo\codingdojo_csharp\fundamental\obj\Debug\netcoreapp3.1\fundamental.AssemblyInfoInputs.cache
+D:\Coding dojo\codingdojo_csharp\fundamental\obj\Debug\netcoreapp3.1\fundamental.AssemblyInfo.cs
+D:\Coding dojo\codingdojo_csharp\fundamental\obj\Debug\netcoreapp3.1\fundamental.csproj.CoreCompileInputs.cache
+D:\Coding dojo\codingdojo_csharp\fundamental\obj\Debug\netcoreapp3.1\fundamental.dll
+D:\Coding dojo\codingdojo_csharp\fundamental\obj\Debug\netcoreapp3.1\fundamental.pdb
+D:\Coding dojo\codingdojo_csharp\fundamental\obj\Debug\netcoreapp3.1\fundamental.genruntimeconfig.cache
