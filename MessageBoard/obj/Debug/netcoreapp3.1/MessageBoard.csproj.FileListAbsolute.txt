@@ -1,0 +1,13 @@
+D:\Coding dojo\codingdojo_csharp\MessageBoard\bin\Debug\netcoreapp3.1\MessageBoard.exe
+D:\Coding dojo\codingdojo_csharp\MessageBoard\bin\Debug\netcoreapp3.1\MessageBoard.deps.json
+D:\Coding dojo\codingdojo_csharp\MessageBoard\bin\Debug\netcoreapp3.1\MessageBoard.runtimeconfig.json
+D:\Coding dojo\codingdojo_csharp\MessageBoard\bin\Debug\netcoreapp3.1\MessageBoard.runtimeconfig.dev.json
+D:\Coding dojo\codingdojo_csharp\MessageBoard\bin\Debug\netcoreapp3.1\MessageBoard.dll
+D:\Coding dojo\codingdojo_csharp\MessageBoard\bin\Debug\netcoreapp3.1\MessageBoard.pdb
+D:\Coding dojo\codingdojo_csharp\MessageBoard\obj\Debug\netcoreapp3.1\MessageBoard.csprojAssemblyReference.cache
+D:\Coding dojo\codingdojo_csharp\MessageBoard\obj\Debug\netcoreapp3.1\MessageBoard.AssemblyInfoInputs.cache
+D:\Coding dojo\codingdojo_csharp\MessageBoard\obj\Debug\netcoreapp3.1\MessageBoard.AssemblyInfo.cs
+D:\Coding dojo\codingdojo_csharp\MessageBoard\obj\Debug\netcoreapp3.1\MessageBoard.csproj.CoreCompileInputs.cache
+D:\Coding dojo\codingdojo_csharp\MessageBoard\obj\Debug\netcoreapp3.1\MessageBoard.dll
+D:\Coding dojo\codingdojo_csharp\MessageBoard\obj\Debug\netcoreapp3.1\MessageBoard.pdb
+D:\Coding dojo\codingdojo_csharp\MessageBoard\obj\Debug\netcoreapp3.1\MessageBoard.genruntimeconfig.cache
