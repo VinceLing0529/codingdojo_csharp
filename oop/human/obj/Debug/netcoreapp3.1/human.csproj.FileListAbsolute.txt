@@ -1,0 +1,13 @@
+D:\Coding dojo\codingdojo_csharp\oop\human\obj\Debug\netcoreapp3.1\human.csprojAssemblyReference.cache
+D:\Coding dojo\codingdojo_csharp\oop\human\obj\Debug\netcoreapp3.1\human.AssemblyInfoInputs.cache
+D:\Coding dojo\codingdojo_csharp\oop\human\obj\Debug\netcoreapp3.1\human.AssemblyInfo.cs
+D:\Coding dojo\codingdojo_csharp\oop\human\obj\Debug\netcoreapp3.1\human.csproj.CoreCompileInputs.cache
+D:\Coding dojo\codingdojo_csharp\oop\human\bin\Debug\netcoreapp3.1\human.exe
+D:\Coding dojo\codingdojo_csharp\oop\human\bin\Debug\netcoreapp3.1\human.deps.json
+D:\Coding dojo\codingdojo_csharp\oop\human\bin\Debug\netcoreapp3.1\human.runtimeconfig.json
+D:\Coding dojo\codingdojo_csharp\oop\human\bin\Debug\netcoreapp3.1\human.runtimeconfig.dev.json
+D:\Coding dojo\codingdojo_csharp\oop\human\bin\Debug\netcoreapp3.1\human.dll
+D:\Coding dojo\codingdojo_csharp\oop\human\bin\Debug\netcoreapp3.1\human.pdb
+D:\Coding dojo\codingdojo_csharp\oop\human\obj\Debug\netcoreapp3.1\human.dll
+D:\Coding dojo\codingdojo_csharp\oop\human\obj\Debug\netcoreapp3.1\human.pdb
+D:\Coding dojo\codingdojo_csharp\oop\human\obj\Debug\netcoreapp3.1\human.genruntimeconfig.cache
