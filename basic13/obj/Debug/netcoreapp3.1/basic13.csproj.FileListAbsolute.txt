@@ -1,0 +1,13 @@
+D:\Coding dojo\codingdojo_csharp\basic13\bin\Debug\netcoreapp3.1\basic13.exe
+D:\Coding dojo\codingdojo_csharp\basic13\bin\Debug\netcoreapp3.1\basic13.deps.json
+D:\Coding dojo\codingdojo_csharp\basic13\bin\Debug\netcoreapp3.1\basic13.runtimeconfig.json
+D:\Coding dojo\codingdojo_csharp\basic13\bin\Debug\netcoreapp3.1\basic13.runtimeconfig.dev.json
+D:\Coding dojo\codingdojo_csharp\basic13\bin\Debug\netcoreapp3.1\basic13.dll
+D:\Coding dojo\codingdojo_csharp\basic13\bin\Debug\netcoreapp3.1\basic13.pdb
+D:\Coding dojo\codingdojo_csharp\basic13\obj\Debug\netcoreapp3.1\basic13.csprojAssemblyReference.cache
+D:\Coding dojo\codingdojo_csharp\basic13\obj\Debug\netcoreapp3.1\basic13.AssemblyInfoInputs.cache
+D:\Coding dojo\codingdojo_csharp\basic13\obj\Debug\netcoreapp3.1\basic13.AssemblyInfo.cs
+D:\Coding dojo\codingdojo_csharp\basic13\obj\Debug\netcoreapp3.1\basic13.csproj.CoreCompileInputs.cache
+D:\Coding dojo\codingdojo_csharp\basic13\obj\Debug\netcoreapp3.1\basic13.dll
+D:\Coding dojo\codingdojo_csharp\basic13\obj\Debug\netcoreapp3.1\basic13.pdb
+D:\Coding dojo\codingdojo_csharp\basic13\obj\Debug\netcoreapp3.1\basic13.genruntimeconfig.cache
