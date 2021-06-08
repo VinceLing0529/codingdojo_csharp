@@ -1,0 +1,13 @@
+D:\Coding dojo\codingdojo_csharp\collections\obj\Debug\netcoreapp3.1\collections.csprojAssemblyReference.cache
+D:\Coding dojo\codingdojo_csharp\collections\obj\Debug\netcoreapp3.1\collections.AssemblyInfoInputs.cache
+D:\Coding dojo\codingdojo_csharp\collections\obj\Debug\netcoreapp3.1\collections.AssemblyInfo.cs
+D:\Coding dojo\codingdojo_csharp\collections\obj\Debug\netcoreapp3.1\collections.csproj.CoreCompileInputs.cache
+D:\Coding dojo\codingdojo_csharp\collections\bin\Debug\netcoreapp3.1\collections.exe
+D:\Coding dojo\codingdojo_csharp\collections\bin\Debug\netcoreapp3.1\collections.deps.json
+D:\Coding dojo\codingdojo_csharp\collections\bin\Debug\netcoreapp3.1\collections.runtimeconfig.json
+D:\Coding dojo\codingdojo_csharp\collections\bin\Debug\netcoreapp3.1\collections.runtimeconfig.dev.json
+D:\Coding dojo\codingdojo_csharp\collections\bin\Debug\netcoreapp3.1\collections.dll
+D:\Coding dojo\codingdojo_csharp\collections\bin\Debug\netcoreapp3.1\collections.pdb
+D:\Coding dojo\codingdojo_csharp\collections\obj\Debug\netcoreapp3.1\collections.dll
+D:\Coding dojo\codingdojo_csharp\collections\obj\Debug\netcoreapp3.1\collections.pdb
+D:\Coding dojo\codingdojo_csharp\collections\obj\Debug\netcoreapp3.1\collections.genruntimeconfig.cache
