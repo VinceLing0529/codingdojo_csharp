@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "wizard_ninga_samurai/1.0.0": {
+        "runtime": {
+          "wizard_ninga_samurai.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "wizard_ninga_samurai/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
