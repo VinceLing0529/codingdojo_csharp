@@ -1,0 +1,13 @@
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\obj\Debug\netcoreapp3.1\deck_of_cards.csprojAssemblyReference.cache
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\obj\Debug\netcoreapp3.1\deck_of_cards.AssemblyInfoInputs.cache
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\obj\Debug\netcoreapp3.1\deck_of_cards.AssemblyInfo.cs
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\obj\Debug\netcoreapp3.1\deck_of_cards.csproj.CoreCompileInputs.cache
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\bin\Debug\netcoreapp3.1\deck_of_cards.exe
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\bin\Debug\netcoreapp3.1\deck_of_cards.deps.json
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\bin\Debug\netcoreapp3.1\deck_of_cards.runtimeconfig.json
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\bin\Debug\netcoreapp3.1\deck_of_cards.runtimeconfig.dev.json
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\bin\Debug\netcoreapp3.1\deck_of_cards.dll
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\bin\Debug\netcoreapp3.1\deck_of_cards.pdb
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\obj\Debug\netcoreapp3.1\deck_of_cards.dll
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\obj\Debug\netcoreapp3.1\deck_of_cards.pdb
+D:\Coding dojo\codingdojo_csharp\oop\deck_of_cards\obj\Debug\netcoreapp3.1\deck_of_cards.genruntimeconfig.cache
