@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model User
+<form asp-action="Create" asp-controller="Home" method="post">
+
+    <label asp-for="Firstname">Firstname</label>
+    <input asp-for="Firstname">    
+    </br>
+        <span asp-validation-for="Firstname"></span>
+       </br> 
+    <label asp-for="Lastname">Lastname</label>
+    <input asp-for="Lastname">
+</br>
+    <span asp-validation-for="Lastname"></span>
+
+ </br> 
+    <label asp-for="Age">Age</label>
+    <input asp-for="Age">
+</br>
+    <span asp-validation-for="Age"></span>
+</br>
+
+    <label asp-for="Email"></label>
+    <input asp-for="Email">
+    </br>
+        <span asp-validation-for="Email"></span>
+    </br>
+
+    <label asp-for="Password"></label>
+    <input asp-for="Password">
+    </br>
+        <span asp-validation-for="Password"></span>
+
+        </br>
+
+    <input value="Add User" type="submit">    
+</form>
