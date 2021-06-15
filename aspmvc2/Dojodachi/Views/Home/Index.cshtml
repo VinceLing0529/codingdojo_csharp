@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div class="text-center" >
+
+    <p>Happiness:@ViewBag.Happiness Fullness:@ViewBag.Fullness  Meals:@ViewBag.Meals Energy:@ViewBag.Energy</p>
+    <p>@TempData["warning"]</p>
+    <div style="display: flex;">
+    <form asp-action="Feed" asp-controller="Home" method="post">
+        <input type="submit" name="" id="" value="Feed">
+    </form>
+    <form asp-action="Play" asp-controller="Home" method="post">
+        <input type="submit" name="" id="" value="Play">
+    </form>
+        <form asp-action="Work" asp-controller="Home" method="post">
+        <input type="submit" name="" id="" value="Work">
+    </form>
+    <form asp-action="Sleep" asp-controller="Home" method="post">
+        <input type="submit" name="" id="" value="Sleep">
+    </form>
+    </div>
+
+</div>
