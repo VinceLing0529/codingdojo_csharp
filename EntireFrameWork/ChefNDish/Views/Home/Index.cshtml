@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Chef
+<div class="text-center">
+<h1>Chef | <a asp-action="Dishes">Dishes</a> </h1>
+</div>
+<h2><a asp-action="New">AddAChef</a></h2>
+<h2>check out our roster of chefs</h2>
+<table class="table table-striped">
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Number of dishes</th>
+                    </tr>
+                    @foreach(var l in ViewBag.AllChef)
+                    {
+                        <tr> 
+                            <td>@l.FirstName @l.LastName</td>
+                            <td>@l.Age</td>
+                            @if(l.AllDishes!=null)
+                            {
+                            <td>@l.AllDishes.Count</td>
+                            }
+                            else
+                            {
+                                 <td>0</td>
+                            }
+
+                        </tr>
+                    }
+</table>

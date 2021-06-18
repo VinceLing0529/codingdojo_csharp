@@ -1,0 +1,63 @@
+<div class="text-center">
+    <h1 class="display-4">Add a new dish</h1>
+    
+</div>
+
+<P><a href="/">Home</a></P>
+
+@model Dish
+<form asp-action="CreateDish" asp-controller="Home" method="post">
+    <div style="display: flex;  justify-content: space-between;">
+
+        <div style="flex: 1;">
+
+            <label asp-for="Name">Name</label>
+                    <span asp-validation-for="Name"></span>
+
+            <br>
+            <input asp-for="Name">    
+            <br>
+            <label asp-for="Calories">Calories</label>
+                    <span asp-validation-for="Calories"></span>
+
+            <br>
+            <input asp-for="Calories">    
+            <br>
+            <label asp-for="Description">Description</label>
+                    <span asp-validation-for="Description"></span>
+
+            <br>
+            <textarea asp-for="Description" cols="30" rows="10"></textarea>
+                        <br>
+
+        </div> 
+        <div style="flex:1;">
+            <label asp-for="ChefId">Chef</label>
+            <br>
+            <select asp-for="ChefId" id="">
+                @foreach (var i in ViewBag.AllChef)
+                {
+                    <option value="@i.ChefId">@i.ChefId @i.FirstName @i.LastName</option>
+                }
+            </select>
+            <br>
+            <input type="submit" value="Add a dish" id="">
+        </div>
+        <div style="flex:1;">
+            <label for="Tastiness">Tastiness</label>
+                    <span asp-validation-for="Tastiness"></span>
+
+<br>
+            <select asp-for="Tastiness" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+        </div>
+
+    </div>
+
+
+</form>
