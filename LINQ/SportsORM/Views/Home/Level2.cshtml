@@ -3,14 +3,144 @@
     <div class="card-body">
         <p>Using the SportsORM, complete all the following queries and show their results on Level2.cshtml.</p>
         <ol>
-            <li>...all teams in the Atlantic Soccer Conference</li>
-            <li>...all (current) players on the Boston Penguins (Hint: Boston is the Location, Penguins is the TeamName)</li>
-            <li>...all (current) players in the International Collegiate Baseball Conference</li>
-            <li>...all (current) players in the American Conference of Amateur Football with last name "Lopez"</li>
-            <li>...all football players</li>
-            <li>...all teams with a (current) player named "Sophia"</li>
-            <li>...all leagues with a (current) player named "Sophia"</li>
-            <li>...everyone with the last name "Flores" who DOESN'T (currently) play for the Washington Roughriders</li>
+            <li>...all teams in the Atlantic Soccer Conference
+                       <table class="table table-striped">
+                    <tr>
+                        <th>Team Location</th>
+                        <th>Team Name</th>
+                        <th>League Id</th>
+                    </tr>
+                    @foreach(var l in ViewBag.AASC)
+                    {
+                        <tr>
+                            <td>@l.Location</td>
+                            <td>@l.TeamName</td>
+                            <td>@l.LeagueId</td>
+                        </tr>
+                    }
+                </table>
+            </li>
+            <li>...all (current) players on the Boston Penguins (Hint: Boston is the Location, Penguins is the TeamName)
+                <table class="table table-striped">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Team Id</th>
+                    </tr>
+                    @foreach(var l in ViewBag.ABP)
+                    {
+                        <tr> 
+                            <td>@l.FirstName</td>
+                            <td>@l.LastName</td>
+                            <td>@l.TeamId</td>
+                        </tr>
+                    }
+                </table>
+            </li>
+            <li>...all (current) players in the International Collegiate Baseball Conference
+                <table class="table table-striped">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Team Id</th>
+                    </tr>
+                    @foreach(var l in ViewBag.IC)
+                    {
+                        <tr> 
+                            <td>@l.FirstName</td>
+                            <td>@l.LastName</td>
+                            <td>@l.TeamId</td>
+                        </tr>
+                    }
+                </table>
+            </li>
+            <li>...all (current) players in the American Conference of Amateur Football with last name "Lopez"
+                <table class="table table-striped">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Team Id</th>
+                    </tr>
+                    @foreach(var l in ViewBag.ACAF)
+                    {
+                        <tr> 
+                            <td>@l.FirstName</td>
+                            <td>@l.LastName</td>
+                            <td>@l.TeamId</td>
+
+                        </tr>
+                    }
+                </table>
+
+            </li>
+            <li>...all football players
+                <table class="table table-striped">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Team Id</th>
+                    </tr>
+                    @foreach(var l in ViewBag.Allfootball)
+                    {
+                        <tr> 
+                            <td>@l.FirstName</td>
+                            <td>@l.LastName</td>
+                            <td>@l.TeamId</td>
+                            
+                        </tr>
+                    }
+                </table>
+            </li>
+            <li>...all teams with a (current) player named "Sophia"
+                 <table class="table table-striped">
+                    <tr>
+                        <th>Team Location</th>
+                        <th>Team Name</th>
+                        <th>League Id</th>
+                    </tr>
+                    @foreach(var l in ViewBag.ATeamOfSophia)
+                    {
+                        <tr>
+                            <td>@l.Location</td>
+                            <td>@l.TeamName</td>
+                            <td>@l.LeagueId</td>
+                        </tr>
+                    }
+                </table>
+            </li>
+            <li>...all leagues with a (current) player named "Sophia"
+                <table class="table table-striped">
+                    <tr>
+                        <th>League Name</th>
+                        <th>League Sport</th>
+                    </tr>
+                    @foreach(var l in ViewBag.AleagueOfSophia)
+                    {
+                        <tr>
+                            <td>@l.Name</td>
+                            <td>@l.Sport</td>
+                        </tr>
+                    }
+                </table>
+            </li>
+            <li>...everyone with the last name "Flores" who DOESN'T (currently) play for the Washington Roughriders
+                 <table class="table table-striped">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Team Id</th>
+                    </tr>
+                    @foreach(var l in ViewBag.Flores)
+                    {
+                        <tr> 
+                            <td>@l.FirstName</td>
+                            <td>@l.LastName</td>
+                            <td>@l.TeamId</td>
+
+                        </tr>
+                    }
+                </table>
+            </li>
         </ol>
     </div>
 </div>

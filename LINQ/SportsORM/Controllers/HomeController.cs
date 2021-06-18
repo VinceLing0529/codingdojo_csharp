@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SportsORM.Models;
 
 
@@ -99,6 +100,50 @@ namespace SportsORM.Controllers
         [HttpGet("level_2")]
         public IActionResult Level2()
         {
+            ViewBag.AASC= _context.Teams
+            .Where(l => l.LeagueId == 5)
+            .ToList();
+            ViewBag.ABP =_context.Players
+            .Where(i => i.TeamId==28)
+            .ToList();
+            
+            var Icbc =_context.Teams.Where(l => l.LeagueId == 2).ToList();
+            List<Player> allplayer = new List<Player>();
+           foreach(var i in Icbc)
+           {
+               List<Player> current = _context.Players.Where(l=>l.TeamId == i.TeamId).ToList();
+               allplayer.AddRange(current);
+               
+           }
+           ViewBag.IC = allplayer;
+
+
+            
+        ViewBag.ACAF =_context.Players.Include(l => l.CurrentTeam.CurrLeague)
+        .Where(l => l.CurrentTeam.CurrLeague.Name == "American Conference of Amateur Football")
+        .Where(l => l.LastName == "Lopez").ToList();
+            
+
+        ViewBag.Allfootball =_context.Players.Include(l => l.CurrentTeam.CurrLeague)
+        .Where(l => l.CurrentTeam.CurrLeague.Sport == "Football")
+        .ToList();
+            
+        ViewBag.ATeamOfSophia = _context.Teams
+        .Include(l =>l.CurrentPlayers)
+        .Where(l => l.CurrentPlayers.Any(j => j.LastName =="Sophia" || j.FirstName=="Sophia"))
+        .ToList();
+
+        ViewBag.AleagueOfSophia = _context.Leagues
+        .Include(l =>l.Teams)
+        .Where(l => l.Teams.Any(j => j.CurrentPlayers.Any(x => x.LastName=="Sophia" || x.FirstName=="Sophia")))
+        .ToList();
+
+        ViewBag.Flores = _context.Players
+        .Include(l => l.CurrentTeam)
+        .Where(l => l.CurrentTeam.TeamName!= "Roughriders" && l.CurrentTeam.Location!="Washington")
+        .Where(l => l.LastName =="Flores")
+        .ToList();
+
             return View();
         }
 

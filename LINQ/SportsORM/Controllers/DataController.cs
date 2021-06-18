@@ -891,6 +891,7 @@ namespace SportsORM.Controllers
                 string[] info = t.Split(",");
                 context.Teams.Add(
                     new Team() {
+                        TeamId =  Array.IndexOf(teams, info)+1,
                         Location=info[0],
                         TeamName=info[1],
                         LeagueId=Int32.Parse(info[2])
