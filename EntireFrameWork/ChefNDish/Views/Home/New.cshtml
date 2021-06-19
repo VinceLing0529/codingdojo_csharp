@@ -2,7 +2,7 @@
 <H1>Add a Chef</H1>
 </div>
 
-<h2><a href="">Home</a></h2>
+<h2><a asp-action="Index">Home</a></h2>
 @model Chef
 <form asp-action="Create">
     <div style="display: flex;">
@@ -22,7 +22,7 @@
             <Label asp-for="Age">Age</Label>
             <span asp-validation-for="Age"></span>
             <br>
-            <input asp-for="Age">
+            <input asp-for="Age"  value="">
             <br>
             <input type="Submit" name="" value="Add Chef">
         </div>

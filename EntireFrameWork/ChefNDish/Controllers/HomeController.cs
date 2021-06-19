@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ChefNDish.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ChefNDish.Controllers
 {
@@ -21,7 +22,7 @@ namespace ChefNDish.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {   
-            ViewBag.AllChef = _context.Chefs.ToList();
+            ViewBag.AllChef = _context.Chefs.Include(l => l.AllDishes).ToList();
             
             return View();
         }
@@ -38,8 +39,11 @@ namespace ChefNDish.Controllers
 
         public IActionResult Dishes()
         {
+            ViewBag.AllDish=_context.Dishes.Include(l => l.creater).ToList();
             return View();
         }
+
+
         [HttpPost("Create")]
         public IActionResult Create(Chef newChef)
         {

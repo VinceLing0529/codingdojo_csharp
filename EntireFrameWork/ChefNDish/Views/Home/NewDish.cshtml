@@ -34,11 +34,9 @@
         <div style="flex:1;">
             <label asp-for="ChefId">Chef</label>
             <br>
-            <select asp-for="ChefId" id="">
-                @foreach (var i in ViewBag.AllChef)
-                {
-                    <option value="@i.ChefId">@i.ChefId @i.FirstName @i.LastName</option>
-                }
+            <select asp-for="ChefId">
+                <option value="1">1</option>
+
             </select>
             <br>
             <input type="submit" value="Add a dish" id="">
