@@ -1,0 +1,28 @@
+﻿
+<div class="text-center">
+    <h1 class="display-4"><a asp-action="Products">Products</a> || Categories</h1>
+    
+</div>
+@model Category
+<div style="display: flex;">
+    <div style="flex:1" class="text-center">
+        <h2>New Category</h2>
+        <form asp-action="CreateCategory" asp-controller="Home" method="post">
+            <label asp-for="Name">Name</label>
+            <br>
+            <input asp-for="Name">
+            <br>
+            <input type="Submit" value="Create" id="">
+
+        </form>
+    </div>
+
+    <div style="flex: 1;" class="text-center">
+        <h2>Exiting Categories</h2>
+        @foreach (var i in ViewBag.Categories)
+        {
+            <h3>    <a href="Categories/@i.CategoryId">@i.Name</a>   </h3>
+        }
+    </div>
+
+</div>

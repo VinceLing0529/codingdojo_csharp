@@ -1,0 +1,38 @@
+﻿
+<div class="text-center">
+    <h1 class="display-4">@ViewBag.Categories.Name</a></h1>
+    
+</div>
+@model Association
+<div style="display: flex;">
+    <div style="flex:1" class="text-center">
+        <h2>Products</h2>
+        @foreach (var i in ViewBag.Product)
+        {
+            <h3>@i.Name</h3>
+        }
+    </div>
+
+    <div style="flex: 1;" class="text-center">
+        <form asp-action="AddCat" asp-controller="Home" method="post">
+            <label asp-for="ProductId">Add a Product</label>
+            <br>
+            <select asp-for="ProductId">
+                @foreach (var i in ViewBag.Products)
+                {
+                    
+                    if(ViewBag.Product.Contains(i)==false)
+                    {
+                    <option value="@i.ProductId">@i.Name</option>
+
+                    }
+                    
+                }
+            </select>
+            <input type="hidden" asp-for="CategoryId" value="@ViewBag.Categories.CategoryId">
+            <br>
+            <input type="Submit" name="" id="" value="Add">
+        </form>
+    </div>
+
+</div>

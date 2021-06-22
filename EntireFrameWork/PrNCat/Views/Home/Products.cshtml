@@ -1,0 +1,34 @@
+﻿
+<div class="text-center">
+    <h1 class="display-4">Products || <a asp-action="Categories">Categories</a></h1>
+    
+</div>
+@model Product
+<div style="display: flex;">
+    <div style="flex:1" class="text-center">
+        <h2>New Product</h2>
+        <form asp-action="CreateProduct" asp-controller="Home" method="post">
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name">
+            <br>
+            <label asp-for="Descrtion">Description</label>
+            <input asp-for="Descrtion">
+            <br>
+            <label asp-for="price">Price</label>
+            <input asp-for="price">
+            <br>
+            <input type="Submit" value="Create" id="">
+
+        </form>
+    </div>
+
+    <div style="flex: 1;" class="text-center">
+        <h2>Exiting Products</h2>
+        @foreach (var i in ViewBag.Products)
+        {
+            <h3>             <a href="Products/@i.ProductId">@i.Name</a>   </h3>
+
+        }
+    </div>
+
+</div>
