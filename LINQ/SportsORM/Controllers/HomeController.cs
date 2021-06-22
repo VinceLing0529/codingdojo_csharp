@@ -155,8 +155,53 @@ namespace SportsORM.Controllers
         [HttpGet("level_3")]
         public IActionResult Level3()
         {
+             ViewBag.SEP = _context.Teams
+            .Include(Player => Player.AllPlayers)
+            .ThenInclude(N => N.PlayerOnTeam)
+            .Where(Player =>Player.AllPlayers.Any(L => L.PlayerOnTeam.FirstName =="Samuel" && L.PlayerOnTeam.LastName == "Evans"))
+            .ToList();
+            
+
+             ViewBag.MTC = _context.Players
+            .Include(Player => Player.AllTeams)
+            .ThenInclude(N => N.TeamOfPlayer)
+            .Where(Player =>Player.AllTeams.Any(L => L.TeamOfPlayer.Location =="Manitoba" && L.TeamOfPlayer.TeamName == "Tiger-Cats"))
+            .ToList();
+
+            ViewBag.WV = _context.Players
+            .Include(Player => Player.AllTeams)
+            .ThenInclude(N => N.TeamOfPlayer)
+            .Where(Player =>Player.AllTeams.Any(L => L.TeamOfPlayer.Location =="Wichita" && L.TeamOfPlayer.TeamName == "Vikings"))
+            .Where(Player => Player.CurrentTeam.Location !="Wichita" && Player.CurrentTeam.TeamName!="Vikings")
+            .ToList();
+
+            ViewBag.JG = _context.Teams
+            .Include(Player => Player.AllPlayers)
+            .ThenInclude(N => N.PlayerOnTeam)
+            .Where(Player =>Player.AllPlayers.Any(L => L.PlayerOnTeam.FirstName =="Jacob" && L.PlayerOnTeam.LastName == "Gray"))
+            .ToList();
+
+            ViewBag.Joshua = _context.Players
+            .Include(Player => Player.AllTeams)
+            .ThenInclude(N => N.TeamOfPlayer)
+            .Where(Player =>Player.AllTeams.Any(L => L.TeamOfPlayer.CurrLeague.Name =="Atlantic Federation of Amateur Baseball Players"))
+            .Where(Player => Player.FirstName=="Joshua" || Player.LastName =="Joshus")
+            .ToList();
+
+            ViewBag.MT12 = _context.Teams
+            .Include(Player => Player.AllPlayers)
+            .Where(Player =>Player.AllPlayers.Count >=12)
+            .ToList();
+
+            ViewBag.ASBT = _context.Players
+            .Include(Player => Player.AllTeams)
+            .OrderByDescending(Player => Player.AllTeams.Count)
+            .ToList();
+
             return View();
         }
+        
+
 
     }
 }
