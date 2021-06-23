@@ -1,0 +1,45 @@
+<h1>Welcome to the Wedding Planner <a asp-action="Logout" asp-controller="Home">Logout</a></h1>
+@model Guest
+<table class="">
+    <table class="table table-striped">
+                    <tr>
+                        <th>Wedding</th>
+                        <th>Date</th>
+                        <th>Guest</th>
+                        <th>Action</th>
+                    </tr>
+                    @foreach(var l in ViewBag.AllWedding)
+                    {
+                        <tr>
+                            <td><a href="/@l.WeddingId">@l.WedderOne & @l.WedderTwo</a></td>
+                            <td>@l.Date</td>
+                            <td>@l.Guest.Count</td>
+                            @if (l.UserId == ViewBag.Id )
+                            {
+                            <td> <a href="/@l.WeddingId/delete">Delete</a></td>
+                            }
+                            else if(ViewBag.Exceptions.Contains(l)==false){
+                            <td>
+                                <form asp-action="Reserve" asp-controller="Weddings">
+                                    <input type="hidden" asp-for="WeddingId" value="@l.WeddingId">
+                                    <input type="hidden" asp-for="UserId" value="@ViewBag.Id">
+                                    <input type="Submit" name="" Value="RSVP">
+                                </form>
+                            </td>
+                            }
+                            else{
+                                <td>
+                                <form asp-action="UnReserve" asp-controller="Weddings">
+                                    <input type="hidden" asp-for="WeddingId" value="@l.WeddingId">
+                                    <input type="hidden" asp-for="UserId" value="@ViewBag.Id">
+                                    <input type="Submit" name="" Value="Un-RSVP">
+                                </form>
+                            </td>
+                            }
+                        </tr>
+                    }
+    </table>
+</table>
+
+<a asp-action="New" asp-controller="Weddings">
+   <button>New Weddings</button> </a>

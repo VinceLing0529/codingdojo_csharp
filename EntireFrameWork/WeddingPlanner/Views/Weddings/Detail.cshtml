@@ -1,0 +1,31 @@
+<h1>@ViewBag.Wed.WedderOne and @ViewBag.Wed.WedderTwo 's Wedding 
+    <a asp-action="Dashboard" asp-controller="Weddings">Dashboard</a> 
+<a asp-action="Logout" asp-controller="Home">Logout</a>
+</h1>
+
+<h2>@ViewBag.Wed.Date</h2>
+
+<H2>Guests:</H2>
+<div style="display:flex;">
+<div style="flex:1;">
+    @foreach (var i in ViewBag.Wed.Guest)
+{
+    <h3>
+        @i.User.FirstName
+    </h3>
+}
+
+</div>
+<div style="flex:1;">
+
+<iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC3bfsnqfNuXRdxyGMwf11aXJ7E9MAKUQw
+    &q=@ViewBag.Wed.Address">
+</iframe>
+</div>
+</div>
